@@ -2,7 +2,14 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/posts", async function (req, res) {
-  res.end();
+  res.json([
+    {
+      id: 1,
+      title: "REST API",
+      content: "...",
+      data: new Date(),
+    },
+  ]);
 });
 router.get("/posts/:id", async function (req, res) {});
 router.post("/posts", async function (req, res) {});
