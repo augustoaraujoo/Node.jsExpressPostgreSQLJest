@@ -7,3 +7,4 @@ create table blog.post{
     date timestamp default now()
 };
 
+insert into blog.post (title,content) values ('REST api','...'),('REST FULL','...');

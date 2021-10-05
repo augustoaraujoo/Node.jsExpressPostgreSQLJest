@@ -1,8 +1,8 @@
-const express = require("express");
+const express = require('express');
 const app = express();
 
-app.use("/", require("./route/postsRoute"));
+app.use('/', require('./route/postsRoute'));
 
-app.listen(3001, () => {
-  console.log("ok");
+app.listen(3000,()=>{
+    console.log('rodando');
 });
